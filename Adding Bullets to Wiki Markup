@@ -1,0 +1,14 @@
+def add_bullets(lines):
+    for line in lines:
+        print("* " + line)
+
+text = []
+print("Enter lines (type 'done' to stop):")
+
+while True:
+    line = input()
+    if line.lower() == 'done':
+        break
+    text.append(line)
+
+add_bullets(text)
